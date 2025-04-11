@@ -2,9 +2,8 @@
 @import 'tailwindcss';
 
 @plugin "daisyui" {
-  themes: all;
+  themes: light --default, dark --prefersdark, synthwave;
 }
-
 html,
 body {
   margin: 0;
@@ -34,13 +33,9 @@ body {
     #00ffff 270deg,
     transparent 360deg
   );
-  mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   pointer-events: none;
   opacity: 0.2;
@@ -65,10 +60,7 @@ body {
   color: #00eaff;
   opacity: 0;
   animation: neon-letter 0.3s ease-in-out forwards;
-  text-shadow:
-    0 0 5px #00eaff,
-    0 0 10px #00eaff,
-    0 0 15px #00eaff;
+  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 15px #00eaff;
 }
 
 @keyframes neon-letter {
@@ -87,10 +79,7 @@ body {
 .neon-letter-static {
   display: inline-block;
   color: #00eaff;
-  text-shadow:
-    0 0 5px #00eaff,
-    0 0 10px #00eaff,
-    0 0 15px #00eaff;
+  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 15px #00eaff;
 }
 
 .dimmed-letter {

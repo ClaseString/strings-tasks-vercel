@@ -1,5 +1,5 @@
 import React from 'react';
-import * as LucideIcons from "lucide-react";
+import * as LucideIcons from 'lucide-react';
 
 const StringCard = ({ stringMethod, onClick }) => {
   const IconComponent = LucideIcons[stringMethod.icon] || LucideIcons.ShieldOff;
@@ -10,8 +10,8 @@ const StringCard = ({ stringMethod, onClick }) => {
       onClick={onClick}
     >
       <div className="card-body flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center text-center sm:text-left p-4 sm:p-6">
-        <IconComponent className="w-6 h-6 text-secondary group-hover:text-base-100 transition-all" />
-        <h2 className="card-title text-primary group-hover:text-base-100 text-base sm:text-lg">
+        <IconComponent className="w-6 h-6 text-secondary group-hover:text-white transition-all" />
+        <h2 className="card-title text-primary group-hover:text-white text-base sm:text-lg">
           {stringMethod.title}
         </h2>
       </div>
@@ -20,4 +20,3 @@ const StringCard = ({ stringMethod, onClick }) => {
 };
 
 export default StringCard;
-
